@@ -1,10 +1,10 @@
 import { Schema, Document } from 'mongoose';
-export const BookSchema = new Schema({
-    title: String,
-    author: String,
+export const adminSchema = new Schema({
+    username: String,
+    password: String,
 });
 
-export interface Book extends Document {
-    title: string;
-    author: string;
+export interface admin extends Document {
+    username: String,
+    password: String,
 }
